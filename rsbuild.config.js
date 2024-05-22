@@ -164,14 +164,17 @@ const configFactory = (
       generator: {
         'css/auto': {
           exportsOnly: true,
+          esModule:false,
           exportsConvention: 'camel-case-only',
           localIdentName: isDev ? '[path][name][ext]__[local]' : '[hash]',
         },
         css: {
           exportsOnly: true,
+          esModule:false,
           exportsConvention: 'camel-case-only',
         },
         'css/module': {
+          esModule:false,
           exportsOnly: true,
           exportsConvention: 'camel-case-only',
           localIdentName: isDev ? '[path][name][ext]__[local]' : '[hash]',
